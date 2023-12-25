@@ -22,12 +22,12 @@ The program identifies the type of query using `regex` and passes it to the next
 
 ```
 | Input     | Query Type| Handler|
-| :-------- | :-------  | :------------------------- |
-| `glob is I` | `Assign Query`  | `CurrencyHandler` |
-| `glob glob Silver is 34 Credits` | `Trade commodity Query`  | `TradeHandler` |
-| `how much is pish tegj glob glob ?` | `find query`  | `FindQueryHandler` |
-| `Does pish tegj glob glob Iron has more Credits than glob glob Gold ?` | `Compare Query`  | `ComparisonQueryHandler` |
-| `Is glob prok larger than pish pish?` | `Compare Query`  | `ComparisonQueryHandler` |
+| -------------------------------------------------------------------- | ---------------------  | ------------------------- |
+| glob is I                                                            | Assign Query           | CurrencyHandler           |
+| glob glob Silver is 34 Credits                                       | Trade commodity Query  | TradeHandler              |
+| how much is pish tegj glob glob ?                                    | find query             | FindQueryHandler          |
+| Does pish tegj glob glob Iron has more Credits than glob glob Gold ? | Compare Query          | ComparisonQueryHandler    |
+| Is glob prok larger than pish pish?                                  | Compare Query          | ComparisonQueryHandler    |
 ```
 
 ## 🔗 Links
