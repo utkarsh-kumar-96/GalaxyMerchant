@@ -1,3 +1,6 @@
+#GALAXY MERCHANT TRADING GUIDE
+Solution to the galaxy merchant trading problem
+
 # Assumptions
 
 Words are case senstitive
