@@ -5,6 +5,9 @@ Solution to the galaxy merchant trading problem
 
 Words are case senstitive
 
+## UML Diagram
+![alt text]([http://url/to/img.png](https://drive.google.com/file/d/1KixQvEX-Z2onalq_yGvOTBPY-S8hVRIW/view?usp=drive_link))
+
 ## Design Patterns Used
 
 Chain Of Responsibility
