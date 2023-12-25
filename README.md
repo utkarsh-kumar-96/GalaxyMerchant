@@ -21,7 +21,7 @@ Pass your queries to execute method in `ParseQuery.java` file. The application w
 The program identifies the type of query using `regex` and passes it to the next `handler` until respective handler is found
 
 ```
-| Input     | Query Type| Handler|
+| Input                                                                | Query Type             | Handler                   |
 | -------------------------------------------------------------------- | ---------------------  | ------------------------- |
 | glob is I                                                            | Assign Query           | CurrencyHandler           |
 | glob glob Silver is 34 Credits                                       | Trade commodity Query  | TradeHandler              |
