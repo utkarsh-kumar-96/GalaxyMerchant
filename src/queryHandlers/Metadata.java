@@ -10,8 +10,7 @@ class Metadata {
     private String query;
 
     public boolean isRomanAlias(String key) {
-        if (currencyValues.get(key) != null && currencyValues.get(key) instanceof String) return true;
-        return false;
+        return currencyValues.get(key.toUpperCase()) != null && currencyValues.get(key.toUpperCase()) instanceof String;
     }
 
     public boolean isTradeCommodity(String key) {
@@ -19,12 +18,12 @@ class Metadata {
     }
 
     public void update(String key, Object value) {
-        currencyValues.put(key, value);
+        currencyValues.put(key.toUpperCase(), value);
     }
 
     public Object getValue(String key) throws Exception {
-        if (!currencyValues.containsKey(key)) throw new RuntimeException(AppConstants.FAILED_QUERY);
-        return currencyValues.get(key);
+        if (!currencyValues.containsKey(key.toUpperCase())) throw new RuntimeException(AppConstants.FAILED_QUERY);
+        return currencyValues.get(key.toUpperCase());
     }
 
     public String getQuery() {

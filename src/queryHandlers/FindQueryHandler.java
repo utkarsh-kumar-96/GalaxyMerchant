@@ -18,21 +18,26 @@ public class FindQueryHandler extends Statement {
         if (matcher.matches()) {
             String[] find = matcher.group(1).split(" ");
             StringBuilder roman = new StringBuilder();
-            for (int i = 0; i < find.length - 1; i++) {
-                if (!metadata.isRomanAlias(find[i])) return AppConstants.FAILED_QUERY;
-                try {
-                    roman.append(metadata.getValue(find[i]));
-                } catch (Exception e) {
-                    return e.getMessage();
+            if(find.length > 1) {
+                for (int i = 0; i < find.length - 1; i++) {
+                    if (!metadata.isRomanAlias(find[i])) return AppConstants.FAILED_QUERY;
+                    try {
+                        roman.append(metadata.getValue(find[i]));
+                    } catch (Exception e) {
+                        return e.getMessage();
+                    }
                 }
             }
 
             String currency = find[find.length - 1];
             if (metadata.isTradeCommodity(currency)) {
-                int dec = ConvertRomanToDecimal.convert(roman.toString());
-                if (dec == -1) return AppConstants.INVALID_ROMAN_NUMERAL_FORMAT;
+                int dec = 1;
+                if (!roman.isEmpty()) {
+                    dec = ConvertRomanToDecimal.convert(roman.toString());
+                    if (dec == -1) return AppConstants.INVALID_ROMAN_NUMERAL_FORMAT;
+                }
                 if (!metadata.isTradeCommodity(currency)) return AppConstants.FAILED_QUERY;
-                Double value = null;
+                Double value;
                 try {
                     value = (Double) metadata.getValue(currency);
                 } catch (Exception e) {
