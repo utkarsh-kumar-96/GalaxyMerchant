@@ -60,8 +60,8 @@ Requested number is in invalid format
 pish tegj glob Iron is 8015.5 Credits
 pish tegj glob glob Iron has less Credits than glob glob Gold
 glob glob Gold has more Credits than pish tegj glob glob Iron
-glob prok smaller than pish pish
-tegj glob glob larger than glob prok
+glob prok is smaller than pish pish
+tegj glob glob is larger than glob prok
 I have no idea what you are talking about
 ```
 ## 🔗 Links
