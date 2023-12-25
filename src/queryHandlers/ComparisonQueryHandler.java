@@ -84,7 +84,7 @@ public class ComparisonQueryHandler extends Statement {
         String rightStmt = String.join(" ", rightCurrency);
         String interString;
         if (type == 1) interString = "has ? Credits than";
-        else if (type == 2) interString = "? than";
+        else if (type == 2) interString = "is ? than";
         else throw new RuntimeException(AppConstants.FAILED_QUERY);
         if (leftCurrencyVal > rightCurrencyVal) {
             if (type == 1) interString = interString.replace("?", "more");
