@@ -6,7 +6,7 @@ Solution to the galaxy merchant trading problem
 Words are case senstitive
 
 ## UML Diagram
-<img align="left" src='https://github.com/utkarsh-kumar-96/GalaxyMerchant/blob/master/GalaxyMerchantResized.png' alt='uml_diagram'>
+<img align="left" src='https://github.com/utkarsh-kumar-96/GalaxyMerchant/blob/master/GalaxyMerchantResized.png' alt='https://drive.google.com/file/d/1KixQvEX-Z2onalq_yGvOTBPY-S8hVRIW/view?usp=drive_link'>
 
 ## Design Patterns Used
 
